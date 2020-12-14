@@ -3,7 +3,7 @@ pipeline {
     triggers {
   pollSCM '* * * * *'
 }
-        }
+    stages{
         stage('build and push docker image') {
       steps {
         script {  
