@@ -14,7 +14,7 @@ pipeline {
           customImage.push()
           customImage1.push()
           credHelpers": {
-          "isims51461/release-03": "registryhelper"
+          isims51461/release-03": "registryhelper"
   }
 }
           }
