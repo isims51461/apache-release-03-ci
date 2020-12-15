@@ -25,5 +25,3 @@ pipeline {
             build 'release-03-cd'
 }
 }
-}
-}
