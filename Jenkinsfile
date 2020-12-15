@@ -19,6 +19,7 @@ pipeline {
     }
 }
 }      
+}    
     stages{     
     stage('deployment trigger') {
           steps {
