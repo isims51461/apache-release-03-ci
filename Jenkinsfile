@@ -13,22 +13,9 @@ pipeline {
           def customImage1 = docker.build("isims51461/release-03")      
           customImage.push()
           customImage1.push()
-          credHelpers": {
-          isims51461/release-03": "registryhelper"
-  }
 }
           }
     }
     
     }
-}
-}      
-}    
-    stages{     
-    stage('deployment trigger') {
-          steps {
-              build {'release-03-cd'
-}
-}
-}
-}
+}     
