@@ -8,7 +8,7 @@ pipeline {
       steps {
         script {  
           checkout scm
-          docker.withRegistry('', 'docker_u')
+          docker.withRegistry('', 'docker_u') {
           def customImage = docker.build("isims51461/release-03:${env.BUILD_ID}")
           def customImage1 = docker.build("isims51461/release-03")      
           customImage.push()
@@ -17,7 +17,6 @@ pipeline {
     }
     
     }
-}
 }
 }
           stage ( 'deployment trigger'){
