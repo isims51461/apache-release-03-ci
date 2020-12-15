@@ -22,7 +22,7 @@ pipeline {
 }
           stage ( 'deployment trigger'){
           steps {
-            build 'job you're triggering'
+            build 'release-03-cd'
 }
 }
 }
