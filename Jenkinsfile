@@ -20,3 +20,10 @@ pipeline {
 }
 }
 }
+          stage ( 'deployment trigger'){
+          steps {
+            build 'job you're triggering'
+}
+}
+}
+}
