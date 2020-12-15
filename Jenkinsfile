@@ -12,7 +12,11 @@ pipeline {
           def customImage = docker.build("isims51461/release-03:${env.BUILD_ID}")
           def customImage1 = docker.build("isims51461/release-03")      
           customImage.push()
-          customImage1.push() 
+          customImage1.push()
+          credHelpers": {
+          "isims51461/release-03": "registryhelper"
+  }
+}
           }
     }
     
