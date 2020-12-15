@@ -19,6 +19,7 @@ pipeline {
     }
 }
 }
+}
           stage ( 'deployment trigger'){
           steps {
             build 'release-03-cd'
